@@ -17,7 +17,9 @@ app = FastAPI(
 )
 
 # CORS configuration
-origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000").split(",")
+default_origins = "http://localhost:3000,https://learnify.vercel.app,https://learnify-1w7p.onrender.com"
+
+origins = os.getenv("ALLOWED_ORIGINS", default_origins).split(",")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
