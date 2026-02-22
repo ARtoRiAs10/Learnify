@@ -1,0 +1,31 @@
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+python-multipart==0.0.9
+python-dotenv==1.0.1
+httpx==0.27.0
+sse-starlette==2.1.0
+
+# PDF processing
+PyMuPDF==1.24.5
+pdfplumber==0.11.1
+
+# YouTube transcript
+youtube-transcript-api==0.6.2
+pytube==15.0.0
+
+# AI & Embeddings (Google Gemini - Free Tier)
+google-generativeai==0.7.2
+
+# Vector store (Supabase + pgvector)
+supabase==2.5.1
+vecs==0.4.3
+
+# Text processing
+langchain==0.2.6
+langchain-text-splitters==0.2.2
+langchain-google-genai==1.0.7
+
+# Utilities
+pydantic==2.7.4
+numpy==1.26.4
+tiktoken==0.7.0
